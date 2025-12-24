@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1% Club — Multilingual</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="theme.css">
+<style>section[id]{scroll-margin-top:80px}html{scroll-behavior:smooth}</style>
+<!-- Analytics -->
+<script defer data-domain="your-domain.example" src="https://plausible.io/js/script.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#home">
+      <svg width="28" height="28" class="me-2"><circle cx="14" cy="14" r="13" fill="#1F7A8C"/><text x="50%" y="60%" text-anchor="middle" fill="white" font-size="13" font-weight="900">1%</text></svg>
+      <span data-i18n="site_name">1% Club</span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home" data-i18n="nav_home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#causes" data-i18n="nav_causes">Causes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pledge" data-i18n="nav_pledge">Pledge</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="ms-3">
+        <select id="lang" class="form-select form-select-sm">
+          <option value="en">English</option>
+          <option value="mr">मराठी</option>
+          <option value="hi">हिंदी</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header id="home" class="hero py-5 text-center">
+  <div class="container fade-up">
+    <h1 class="fw-bold mb-2" data-i18n="hero_title">Join the 1% Club</h1>
+    <p class="lead mb-3" data-i18n="hero_sub">Give 1%. Create meaningful impact.</p>
+    <a href="#pledge" class="btn btn-primary btn-lg">
+      <i class="bi bi-heart-fill me-1"></i> <span data-i18n="cta_pledge">Make the Pledge</span>
+    </a>
+  </div>
+</header>
+
+<section id="causes" class="container py-5">
+  <h2 class="text-center mb-4 fade-up">
+    <i class="bi bi-globe text-primary me-1"></i>
+    <span data-i18n="section_causes">Causes We Support</span>
+  </h2>
+  <div class="row g-4">
+    <div class="col-md-4 fade-up"><div class="card h-100 shadow-sm"><div class="card-body">
+      <i class="bi bi-book fs-2 text-primary"></i>
+      <h5 class="mt-2" data-i18n="cause_edu_title">Education</h5>
+      <p data-i18n="cause_edu_desc">Scholarships & learning access.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank" data-i18n="btn_donate">Donate</a>
+    </div></div></div>
+    <div class="col-md-4 fade-up"><div class="card h-100 shadow-sm"><div class="card-body">
+      <i class="bi bi-hospital fs-2 text-primary"></i>
+      <h5 class="mt-2" data-i18n="cause_health_title">Healthcare</h5>
+      <p data-i18n="cause_health_desc">Medical aid & relief support.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank" data-i18n="btn_donate">Donate</a>
+    </div></div></div>
+    <div class="col-md-4 fade-up"><div class="card h-100 shadow-sm"><div class="card-body">
+      <i class="bi bi-tree fs-2 text-primary"></i>
+      <h5 class="mt-2" data-i18n="cause_env_title">Environment</h5>
+      <p data-i18n="cause_env_desc">Conservation & sustainability.</p>
+      <a href="#" class="btn btn-primary w-100" target="_blank" data-i18n="btn_donate">Donate</a>
+    </div></div></div>
+  </div>
+</section>
+
+<section id="pledge" class="bg-light py-5">
+  <div class="container fade-up">
+    <h2 class="text-center mb-3">
+      <i class="bi bi-pencil-square text-primary me-1"></i>
+      <span data-i18n="section_pledge">Make Your Pledge</span>
+    </h2>
+    <div class="ratio ratio-4x3 border rounded shadow-sm mb-3">
+      <iframe src="https://docs.google.com/forms/d/e/.../viewform?embedded=true"></iframe>
+    </div>
+    <div class="text-center">
+      <a href="certificate.html" class="btn btn-outline-primary">
+        <i class="bi bi-award me-1"></i>
+        <span data-i18n="btn_certificate">Generate Pledge Certificate</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="container py-5 fade-up">
+  <h2 class="text-center mb-3"><i class="bi bi-info-circle text-primary me-1"></i>
+    <span data-i18n="section_about">About</span></h2>
+  <p data-i18n="about_text">The 1% Club is a community movement encouraging people to commit one percent of their income to social good through transparent, direct giving.</p>
+</section>
+
+<section id="contact" class="container py-5 fade-up">
+  <h2 class="text-center mb-3"><i class="bi bi-envelope text-primary me-1"></i>
+    <span data-i18n="section_contact">Contact</span></h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form action="mailto:info@1percentclub.org" method="post" enctype="text/plain" class="card p-3 shadow-sm">
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_name">Name</label>
+          <input class="form-control" name="name" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_email">Email</label>
+          <input class="form-control" type="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" data-i18n="field_message">Message</label>
+          <textarea class="form-control" rows="4" name="message"></textarea>
+        </div>
+        <button class="btn btn-primary w-100" type="submit">
+          <i class="bi bi-send me-1"></i> <span data-i18n="btn_send">Send</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-3">
+  <small>© 2025 1% Club</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const strings = {
+  en: {
+    site_name:"1% Club", nav_home:"Home", nav_causes:"Causes", nav_pledge:"Pledge", nav_about:"About", nav_contact:"Contact",
+    hero_title:"Join the 1% Club", hero_sub:"Give 1%. Create meaningful impact.", cta_pledge:"Make the Pledge",
+    section_causes:"Causes We Support", cause_edu_title:"Education", cause_edu_desc:"Scholarships & learning access.",
+    cause_health_title:"Healthcare", cause_health_desc:"Medical aid & relief support.",
+    cause_env_title:"Environment", cause_env_desc:"Conservation & sustainability.", btn_donate:"Donate",
+    section_pledge:"Make Your Pledge", btn_certificate:"Generate Pledge Certificate",
+    section_about:"About", about_text:"The 1% Club is a community movement encouraging people to commit one percent of their income to social good through transparent, direct giving.",
+    section_contact:"Contact", field_name:"Name", field_email:"Email", field_message:"Message", btn_send:"Send"
+  },
+  mr: {
+    site_name:"१% क्लब", nav_home:"मुख्यपृष्ठ", nav_causes:"कारण", nav_pledge:"प्रतिज्ञा", nav_about:"माहिती", nav_contact:"संपर्क",
+    hero_title:"१% क्लबमध्ये सामील व्हा", hero_sub:"१% द्या. अर्थपूर्ण परिणाम घडवा.", cta_pledge:"प्रतिज्ञा करा",
+    section_causes:"आमचे उपक्रम", cause_edu_title:"शिक्षण", cause_edu_desc:"शिष्यवृत्ती व शिक्षण संधी",
+    cause_health_title:"आरोग्य", cause_health_desc:"वैद्यकीय मदत व आपत्कालीन सहाय्य",
+    cause_env_title:"पर्यावरण", cause_env_desc:"संवर्धन व शाश्वतता", btn_donate:"देणगी द्या",
+    section_pledge:"तुमची प्रतिज्ञा करा", btn_certificate:"प्रतिज्ञा प्रमाणपत्र तयार करा",
+    section_about:"माहिती", about_text:"१% क्लब हा सामाजिक हितासाठी उत्पन्नातील एक टक्का देण्याची प्रेरणा देणारा सामुदायिक उपक्रम आहे.",
+    section_contact:"संपर्क", field_name:"नाव", field_email:"ईमेल", field_message:"संदेश", btn_send:"पाठवा"
+  },
+  hi: {
+    site_name:"1% क्लब", nav_home:"होम", nav_causes:"कारण", nav_pledge:"प्रतिज्ञा", nav_about:"जानकारी", nav_contact:"संपर्क",
+    hero_title:"1% क्लब से जुड़ें", hero_sub:"1% दें. सार्थक प्रभाव बनाएं.", cta_pledge:"प्रतिज्ञा करें",
+    section_causes:"हमारे सामाजिक प्रयास", cause_edu_title:"शिक्षा", cause_edu_desc:"छात्रवृत्ति और शिक्षा सहायता",
+    cause_health_title:"स्वास्थ्य", cause_health_desc:"चिकित्सा सहायता व राहत",
+    cause_env_title:"पर्यावरण", cause_env_desc:"संरक्षण और स्थिरता", btn_donate:"दान करें",
+    section_pledge:"अपनी प्रतिज्ञा करें", btn_certificate:"प्रतिज्ञा प्रमाणपत्र बनाएं",
+    section_about:"जानकारी", about_text:"1% क्लब लोगों को अपनी आय का एक प्रतिशत सामाजिक कल्याण के लिए देने के लिए प्रेरित करने वाला सामुदायिक अभियान है।",
+    section_contact:"संपर्क", field_name:"नाम", field_email:"ईमेल", field_message:"संदेश", btn_send:"भेजें"
+  }
+};
+function applyLang(lang) {
+  document.querySelectorAll("[data-i18n]").forEach(el=>{
+    const key = el.getAttribute("data-i18n");
+    if(strings[lang] && strings[lang][key]) el.innerText = strings[lang][key];
+  });
+}
+const sel=document.getElementById("lang");
+sel.addEventListener("change", e=>applyLang(e.target.value));
+applyLang("en");
+
+// animations
+const observer=new IntersectionObserver(e=>e.forEach(x=>x.isIntersecting&&x.target.classList.add("appear")));
+document.querySelectorAll(".fade-up").forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
