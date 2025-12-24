@@ -1,0 +1,83 @@
+
+:root{--primary:#1F7A8C;--accent:#E76F51;--dark:#0B1C26;--light:#F7FAFC;}
+.hero{background:linear-gradient(135deg,var(--primary),#145262);color:#fff;}
+.hero h1{font-size:2.6rem;font-weight:900;}
+.btn-primary{background:var(--accent);border-color:var(--accent);}
+.btn-primary:hover{background:#c85d42;border-color:#c85d42;}
+.card{border-radius:14px;transition:transform .25s ease,box-shadow .25s ease;}
+.card:hover{transform:translateY(-6px);box-shadow:0 16px 32px rgba(0,0,0,.08);}
+.fade-up{opacity:0;transform:translateY(20px);transition:all .6s ease;}
+.fade-up.appear{opacity:1;transform:translateY(0);}
+.services-slider{display:flex;gap:16px;overflow:hidden;scroll-snap-type:x mandatory;padding-bottom:6px;}
+/* hide scrollbar for non-scroll use */
+.services-slider::-webkit-scrollbar{height:8px;display:none}
+.services-slider{-ms-overflow-style:none;scrollbar-width:none}
+.services-slider::-webkit-scrollbar-thumb{background:#ccc;border-radius:6px;}
+/* show two cards at a time */
+.service-card{flex:0 0 50%;max-width:50%;scroll-snap-align:center;}
+@media (max-width:576px){
+	/* stack on very small screens */
+	.service-card{flex:0 0 100%;max-width:100%;}
+
+/* language switch styles */
+.lang-switch .btn{font-size:.85rem}
+.lang-switch .btn[aria-pressed="true"]{border-color:var(--primary);background:var(--primary);color:#fff}
+}
+.service-card img{width:100%;height:180px;object-fit:cover;border-radius:12px;background:#eee;}
+.whatsapp-btn{position:fixed;right:16px;bottom:16px;background:#25D366;color:#fff;border-radius:50px;padding:12px 18px;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.2);text-decoration:none;}
+.social a{display:inline-flex;align-items:center;gap:6px;margin-right:10px;text-decoration:none;}
+.logo-mark{height:150px;margin-right:8px;}
+.logo-swami-mark{height:150px;margin-right:8px;border-radius: 40px; margin-top: 20%;}
+@media(max-width:768px){.hero h1{font-size:2.1rem;}}
+
+/* Payment badges styling */
+.payment-badges{margin-top:6px}
+.payment-badge{background:#fff;border:1px solid rgba(11,28,38,0.06);border-radius:10px;padding:8px 10px;color:var(--dark);text-decoration:none;box-shadow:0 6px 16px rgba(11,28,38,0.04);transition:transform .15s ease,box-shadow .15s ease;}
+.payment-badge:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(11,28,38,0.08)}
+.payment-logo{height:28px;width:auto;display:block}
+.payment-info p{margin-bottom:0}
+@media(max-width:576px){
+	.logo-mark{height:120px}
+	.payment-badge{padding:6px 8px}
+	.payment-logo{height:22px}
+}
+
+/* Gallery slider: single row showing two images at a time */
+.gallery-slider{display:flex;gap:16px;overflow:hidden;align-items:center}
+.gallery-slider::-webkit-scrollbar{display:none}
+.gallery-item{flex:0 0 50%;max-width:50%;height:240px;border-radius:12px;overflow:hidden}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
+
+@media (max-width:768px){
+	.gallery-item{flex:0 0 100%;max-width:100%;height:200px}
+}
+
+@media (prefers-reduced-motion: reduce){
+	/* disable any auto-scroll animation — handled in JS by not starting */
+	.gallery-slider{transition:none}
+}
+
+/* Rate card styling tweaks */
+.table thead th{border-bottom-width:0}
+.table-striped tbody tr:nth-of-type(odd){background-color:rgba(31,122,140,0.03)}
+.table-responsive{overflow-x:auto}
+.table .text-end{white-space:nowrap}
+
+@media(max-width:576px){
+	/* make table more compact on small screens */
+	.table td, .table th{padding:.5rem}
+}
+
+/* Marquee / continuous scrolling text for navbar */
+.marquee{overflow:hidden;white-space:nowrap;display:block;max-width:100%;}
+.marquee__inner{display:inline-flex;align-items:center;gap:3rem;padding-left:0;will-change:transform;animation:marquee 12s linear infinite;}
+.marquee__text{display:inline-block;white-space:nowrap;padding-right:2rem;font-weight:700;}
+
+.marquee:hover .marquee__inner{animation-play-state:paused}
+
+@keyframes marquee{0%{transform:translateX(0%);}100%{transform:translateX(-50%);}}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce){
+	.marquee__inner{animation:none}
+}
